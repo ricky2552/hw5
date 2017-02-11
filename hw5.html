@@ -1,27 +1,39 @@
 <html>
-    <title>
-        Homework 5
-    </title>
+   <head>
+    <title>Homework 5</title>
+    <link rel="stylesheet" type="text/css" href="hw5.css">
+    <script src="hw5.js"></script>
+   </head>
 <h1>
     Choose your Topping
 </h1>
+<p>Type the value into the box below and press "Add Total" button for each new value.</p>
 <br>
-<div>
-    <img src="pepperoni.jpg" width="250">
-    <button>Add $4</button>
+<body>
+ <div>
+    <div id="images">
+        <div>
+        <img src="pepperoni.jpg" width="250">
+        <p>$4.00</p>
+        </div>
+
+        <div>
+        <img src="mushroom.jpg" width="250" height="153">
+        <p>$3.00</p>
+        </div>
+
+        <div>
+        <img src="bell_pepper.jpg" width="250" height="153">
+        <p>$3.50</p>
+        </div>
+
+        <div>
+        <img src="black_olives.jpg" width="250" height="153">
+        <p>$3.25</p>
+        </div>
+    </div>
+    <input id="myinput"/><button onclick="addInputs()">Add Total</button>
+    <p>Total</p>
+    <p id="Total">$0.00</p>
 </div>
-<br>
-<div>
-    <img src="mushroom.jpg" width="250" height="153">
-    <button>Add $3</button>
-</div>
-<br>
-<div>
-    <img src="bell_pepper.jpg" width="250" height="153">
-    <button>Add $3.50</button>
-</div>
-<br>
-<div>
-    <img src="black_olives.jpg" width="250" height="153">
-    <button>Add $3.25</button>
-</div>
+</body>
